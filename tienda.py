@@ -1,4 +1,3 @@
-# tienda.py
 from producto import Producto
 
 class Tienda:
@@ -55,7 +54,7 @@ class Farmacia(Tienda):
             mensaje_precio = f"{prod.precio}"
             if prod.precio > 15000:
                 mensaje_precio += " (Envío gratis al solicitar este producto)"
-            productos_listados.append(f"{prod.nombre}: {mensaje_precio} (Stock: {prod.stock})")
+            productos_listados.append(f"{prod.nombre}: {mensaje_precio}")
         return "\n".join(productos_listados)
 
     def realizar_venta(self, nombre_producto, cantidad):
